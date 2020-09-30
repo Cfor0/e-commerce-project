@@ -8,6 +8,7 @@ nav {
     position: fixed;
     background: grey;
     text-align: left;
+    top: 0;
 }
 
 li {
