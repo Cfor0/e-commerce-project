@@ -1,6 +1,8 @@
 body {
     background: lightsalmon;
     margin: 0;
+    position: relative;
+    min-height: 750px;
 }
 
 #title {
@@ -51,3 +53,67 @@ article {
     padding: 10px;
     margin: 10px 0;
 }
+
+/* Footer CSS */
+
+footer {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    background: lightskyblue;
+    bottom: 0;
+    display: block;
+}
+
+/* Products CSS */
+#main-section {
+    padding-bottom: 70px;
+}
+#product-container {
+    margin: 60px 20px 0;
+    border: black solid 2px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.card-container {
+    border: green solid 1px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.product-img{
+    width: 100%;
+    height: 150px;
+}
+
+/* Contact Page CSS */
+form {
+    background: linear-gradient(red, yellow);
+    margin: 75px 33%;
+    padding: 15px;
+    text-align: left;
+    color: white;
+    
+  }
+  
+  form label {
+    padding: 0 20px;
+  }
+  
+  form input {
+    margin: 5px 0 10px 20px;
+    width: 80%;
+  }
+  
+  #submit {
+    margin-left: 20px;
+    padding: 10px 15px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: white;
+    background: red;
+    width: auto;
+  }
