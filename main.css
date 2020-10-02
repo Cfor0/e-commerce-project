@@ -3,6 +3,14 @@ body {
     margin: 0;
 }
 
+#title {
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+/* Navbar CSS */
+
 nav {
     width: 100%;
     position: fixed;
@@ -27,11 +35,19 @@ li a {
     padding: 10px, 15px;
 }
 
+/* Slideshow CSS */
+
 .slideShow {
-    margin-top: 60px;
-    border: black solid 3px;
+    margin-top: 30px;
+    /* border: black solid 3px; */
 }
 
 img {
-    height: 470px;
+    height: 350px;
+}
+
+article {
+    border: solid grey 1px;
+    padding: 10px;
+    margin: 10px 0;
 }
