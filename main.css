@@ -11,7 +11,8 @@ h1, h2, h3, p, a, input, label {
 #title {
     margin-top: 60px;
     text-align: center;
-
+    text-transform: uppercase;
+    color: rgb(71, 68, 68);
 }
 
 /* Navbar CSS */
@@ -41,6 +42,14 @@ li a {
     padding: 10px, 15px;
 }
 
+.logo {
+    display: inline-block;
+    height: 50px;
+    float: left;
+    border-radius: 15px;
+    margin: 5px 5px;
+}
+
 /* Slideshow CSS */
 
 .slideShow {
@@ -56,6 +65,13 @@ article {
     border: solid grey 1px;
     padding: 10px;
     margin: 10px 0;
+    background-color: rgba(124, 106, 106, 0.623);
+}
+
+article > p {
+    font-style: italic;
+    color: rgba(241, 228, 228, 0.795);
+    font-size: 18px;
 }
 
 /* Footer CSS */
@@ -74,6 +90,9 @@ footer {
 h2 {
     margin-top: 65px;
     text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+    text-decoration: underline;
 }
 
 h3 {
@@ -88,15 +107,14 @@ h3 {
     margin: 10px 40px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 }
 
 .card-container {
-    border: green solid 1px;
     padding: 10px;
     margin: 15px;
-    
+    background-color: rgba(124, 106, 106, 0.623);
 }
 
 .product-img{
@@ -106,6 +124,12 @@ h3 {
 
 .caption-title > h3 {
     margin-bottom: 0;
+}
+
+.caption-text {
+    font-style: italic;
+    color: rgba(241, 228, 228, 0.795);
+    font-size: 18px;
 }
 
 .disc-price {
