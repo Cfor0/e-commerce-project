@@ -1,10 +1,10 @@
 body {
-    background: white;
+    background: lightblue;
     margin: 0;
     position: relative;
     /* min-height: 770px; */
 }
-h1, h2, h3, p, a, input, label {
+h1, h2, h3, h4, p, a, input, label {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   }
 
@@ -21,7 +21,7 @@ nav {
     display: block;
     width: 100%;
     position: fixed;
-    background: grey;
+    background: rgb(39, 102, 49);
     text-align: left;
     top: 0;
     z-index: 1;
@@ -44,7 +44,7 @@ li a {
 }
 
 .logo {
-    display: inline-block;
+    display: block;
     height: 50px;
     float: left;
     border-radius: 15px;
@@ -66,12 +66,12 @@ article {
     border: solid grey 1px;
     padding: 10px;
     margin: 10px 0;
-    background-color: rgba(124, 106, 106, 0.623);
+    background-color: rgb(39, 102, 49);
 }
 
 article > p {
     font-style: italic;
-    color: rgba(241, 228, 228, 0.795);
+    color: white;
     font-size: 18px;
 }
 
@@ -142,6 +142,7 @@ article > p {
     border-radius: 15px;
     margin: 10px 25px;
   }
+
 /* Products CSS */
 h2 {
     margin-top: 70px;
@@ -149,14 +150,27 @@ h2 {
     font-size: 26px;
     font-weight: normal;
     text-decoration: underline;
+    color: white;
 }
 
 h3 {
     text-align: center;
+    color: white;
 }
 
 #main-section {
     padding-bottom: 70px;
+}
+
+.product-headings {
+    background: rgb(211,255,228);
+    margin: 70px 20% 0;
+    padding: 5px;
+}
+
+.product-headings h2 {
+    color: black;
+    margin: 0;
 }
 
 .product-container{
@@ -171,7 +185,7 @@ h3 {
     width: 20%;
     padding: 10px;
     margin: 15px;
-    background-color: rgba(124, 106, 106, 0.623);
+    background-color: rgb(39, 102, 49);
 }
 
 .card-container img {
@@ -190,7 +204,7 @@ h3 {
 
 .caption-text {
     font-style: italic;
-    color: rgba(241, 228, 228, 0.795);
+    color: white;
     font-size: 18px;
 }
 
@@ -200,6 +214,7 @@ h3 {
     font-size: 18px;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 #balista {
@@ -208,7 +223,7 @@ h3 {
 
 /* Contact Page CSS */
 form {
-    background: grey;
+    background: rgb(39, 102, 49);
     margin: 75px 33%;
     padding: 15px;
     text-align: left;
@@ -228,9 +243,24 @@ form {
   #submit {
     margin-left: 20px;
     padding: 10px 15px;
-    border: 2px solid orange;
+    border: 2px solid rgb(13, 32, 202);
     border-radius: 5px;
     color: white;
-    background: red;
+    background: rgb(33, 33, 136);
     width: auto;
   }
+
+  /* Media Queries */
+@media (max-width: 800px) {
+    .product-container{
+        margin: 10px 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        width: 80%;
+        
+    }
+}
