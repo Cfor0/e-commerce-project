@@ -2,7 +2,7 @@ body {
     background: white;
     margin: 0;
     position: relative;
-    min-height: 770px;
+    /* min-height: 770px; */
 }
 h1, h2, h3, p, a, input, label {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -77,16 +77,71 @@ article > p {
 
 /* Footer CSS */
 
-footer {
+#footer {
     margin-top: 10px;
     padding: 0;
     width: 100%;
     position: absolute;
-    background: lightskyblue;
-    bottom: 0;
-    display: block;
+    background: rgb(54, 116, 155);
+    /* bottom: 0; */
+    display: flex;
+    justify-content: space-around;
 }
 
+#footer-section1 {
+    text-align: center;
+    color: white;
+    order: 2;
+}
+
+#footer-section3 {
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    order: 1;
+}
+
+#footer-section2 {
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    order: 3;
+}
+
+#copyright {
+  align-content: center;
+}
+
+.fa {
+    padding: 0 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.footer-logo {
+    display: block;
+    float: left;
+    height: 175px;
+    border-radius: 15px;
+    margin: 10px 25px;
+  }
 /* Products CSS */
 h2 {
     margin-top: 70px;
