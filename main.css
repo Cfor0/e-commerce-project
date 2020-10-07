@@ -40,7 +40,7 @@ ul{
 li a {
     text-decoration: none;
     color: white;
-    padding: 10px, 15px;
+    padding: 10px 10px;
 }
 
 .logo {
@@ -50,6 +50,37 @@ li a {
     border-radius: 15px;
     margin: 5px 5px;
 }
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: lightblue;
+}
+
+
+/* stroke */
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
 
 /* Slideshow CSS */
 
@@ -261,6 +292,5 @@ form {
 
     .card-container {
         width: 80%;
-        
     }
 }
